@@ -1,0 +1,14 @@
+
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+@media (min-width: 768px) {
+    .contenido {
+        flex-direction: row;
+        gap: 4rem;
+    }
+}

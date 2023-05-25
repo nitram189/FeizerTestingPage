@@ -1,0 +1,81 @@
+
+
+.contenido {
+    display: grid;
+    gap: 4rem;
+    align-items: flex-start;
+}
+@media (min-width: 768px) {
+    .contenido {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+.carrito {
+    padding: 3rem 0;
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.producto {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 1rem;
+    background-color: var(--white);
+}
+.producto p {
+ margin: 0;
+}
+.producto span {
+    font-weight: 700;
+}
+.nombre {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.select {
+    all: unset;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 50%;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    background-color: var(--white);
+    cursor: pointer;
+}
+.precio {
+    color: var(--primary);
+    font-size: 2.6rem;
+}
+.subtotal {
+    font-size: 2.2rem;
+}
+.resumen {
+    padding: 3rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    position: sticky;
+    top: 3rem;
+}
+.eliminar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 100vmax;
+    background-color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+.eliminar:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
